@@ -4,5 +4,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="apakabar_dunia">Apakabar Dunia</string>
     <string name="tombol_terjemahan">Terjemahkan</string>
+    <string name="tombol_translate">Translate</string>
     <string name="action_settings">Settings</string>
 </resources>

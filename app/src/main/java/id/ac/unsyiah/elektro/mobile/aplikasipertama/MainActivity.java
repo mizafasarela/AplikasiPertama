@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.TextureView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -42,14 +43,17 @@ public class MainActivity extends ActionBarActivity {
     }
     public void onClickTblTerjemah(View view){
         TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
+        Button button = (Button) findViewById(R.id.btnTerjemahan);
 
         if (bahasaIndonesia == false){
         String apakabar = getString(R.string.apakabar_dunia);
+        button.setText(R.string.tombol_translate);
         txtTulisan.setText(apakabar);
         bahasaIndonesia = true;
         }
         else{
             String helloword = getString(R.string.hello_world);
+            button.setText(R.string.tombol_terjemahan);
             txtTulisan.setText(helloword);
             bahasaIndonesia = false;
         }
